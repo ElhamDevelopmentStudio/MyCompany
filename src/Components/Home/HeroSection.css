@@ -1,0 +1,14 @@
+/* HeroSection.css */
+@import 'https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap';
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  background: linear-gradient(135deg, rgba(14, 14, 48, 1) 0%, rgba(34, 34, 34, 1) 100%);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Add any additional global styles or animations here */

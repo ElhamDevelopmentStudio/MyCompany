@@ -19,6 +19,8 @@
     "@react-spring/web": "^9.7.3",
     "@react-three/fiber": "^8.15.16",
     "@tailwindcss/typography": "^0.5.10",
+    "antd": "^5.14.0",
+    "css-doodle": "^0.38.4",
     "framer-motion": "^11.0.3",
     "gsap": "^3.12.5",
     "pixi.js": "^7.4.0",
