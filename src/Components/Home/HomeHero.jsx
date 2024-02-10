@@ -1,8 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { motion } from 'framer-motion';
-import '@fontsource/plus-jakarta-sans';
-import TranslucentNavbar from './Navbar';
+import {
+  faFacebookF,
+  faLinkedinIn,
+  faInstagram,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { motion } from "framer-motion";
+import "@fontsource/plus-jakarta-sans";
+import TranslucentNavbar from "./Navbar";
 import "./style.css";
 
 const buttonVariants = {
@@ -97,7 +102,7 @@ const HomeHero = () => {
         </div>
         <div className="hidden sm:flex sm:flex-col sm:absolute sm:left-8 sm:top-1/2 sm:transform sm:-translate-y-1/2 space-y-2">
           <FontAwesomeIcon
-            icon={faTwitter}
+            icon={faXTwitter}
             size="lg"
             className="text-white hover:text-gray-300 transition-colors duration-200"
           />
