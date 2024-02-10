@@ -30,27 +30,25 @@ const GradientButton = ({ buttonText }) => {
 };
 
 const Overview = () => {
-  // Content for the overview section
   return (
-    <section className="text-white bg-gray-800 body-font">
-      <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        <div className="text-center lg:w-2/3 w-full">
-          <p className="mb-8 leading-relaxed">
-            Welcome to [Your Company Name], where innovation meets excellence in
-            web development. As the CEO and lead developer, I bring extensive
-            experience in React JS, Next JS, HTML, CSS, Tailwind, Bootstrap, and
-            more, to the forefront of every project. Our team, skilled in
-            Python, Django, and various DBMS, complements our front-end prowess
-            with robust back-end solutions. Our mission? To deliver bespoke web
-            experiences that startups and SMBs can proudly call their crown
-            jewels.
-          </p>
-          <div className="flex justify-center">
-            <GradientButton buttonText="Learn More" />
+    <div className="bg-gray-900 text-white">
+      <div className="container mx-auto py-24">
+        <div className="max-w-md mx-auto bg-gray-800 rounded-xl shadow-md overflow-hidden md:max-w-2xl hover:shadow-lg transition-shadow duration-300 ease-in-out">
+          <div className="md:flex">
+            <div className="p-8">
+              <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                Overview
+              </div>
+              <p className="mt-2 text-white">
+                Welcome to [Your Company Name], where innovation meets
+                excellence in web development...
+              </p>
+              {/* ... */}
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
@@ -63,19 +61,19 @@ const Navigation = () => {
           <span className="ml-3 text-xl">[Your Company Logo]</span>
         </a>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a href="#about" className="mr-5 hover:text-gray-300">
+          <a href="#" className="mr-5 hover:text-gray-300">
             About Us
           </a>
-          <a href="#services" className="mr-5 hover:text-gray-300">
+          <a href="#" className="mr-5 hover:text-gray-300">
             Services
           </a>
-          <a href="#portfolio" className="mr-5 hover:text-gray-300">
+          <a href="#" className="mr-5 hover:text-gray-300">
             Portfolio
           </a>
-          <a href="#blog" className="mr-5 hover:text-gray-300">
+          <a href="#" className="mr-5 hover:text-gray-300">
             Blog
           </a>
-          <a href="#contact" className="mr-5 hover:text-gray-300">
+          <a href="#" className="mr-5 hover:text-gray-300">
             Contact Us
           </a>
         </nav>
