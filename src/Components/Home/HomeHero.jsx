@@ -148,12 +148,19 @@ const WelcomeSection = () => {
             Welcome to Nucleus Web Studio
           </h1>
           <p className="text-md sm:text-lg md:text-xl lg:text-2xl mb-8">
-            where innovation meets excellence in web development.
+            Where innovation meets excellence in web development.
           </p>
           <p className="text-sm sm:text-md md:text-lg mb-6">
-            As the CEO and lead developer, I bring extensive experience...
+            What sets us apart is not just our technical expertise but our
+            commitment to clear, direct communication and a collaborative
+            approach. You're not just hiring a web development firm; you're
+            partnering with a team that sees your success as our own. From
+            conception to deployment, we ensure every project is managed with
+            the utmost precision, leveraging GitHub, Vercel, and a suite of
+            professional tools to guarantee timely delivery and impeccable
+            quality.
           </p>
-          {/* Button styling adjusted for a more cohesive look with the rest of the site's aesthetic */}
+
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -164,6 +171,137 @@ const WelcomeSection = () => {
         </div>
       </div>
     </motion.div>
+  );
+};
+
+const Footer = () => {
+  return (
+    <footer className="bg-gray-900 text-gray-400">
+      <div className="max-w-6xl mx-auto px-4 py-10 lg:py-20">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+          <div>
+            <h5 className="text-white font-bold text-lg mb-4">About Us</h5>
+            <p className="text-gray-400 text-sm mb-4">
+              Nucleus Web Studios is dedicated to innovating, creating, and
+              elevating web solutions. We offer comprehensive web design,
+              development, and marketing services to help your business succeed
+              online.
+            </p>
+            <a
+              href="#about"
+              className="text-primary hover:text-primary-light transition-colors duration-300"
+            >
+              Learn More
+            </a>
+          </div>
+
+          <div>
+            <h5 className="text-white font-bold text-lg mb-4">Services</h5>
+            <ul className="space-y-2">
+              <li>
+                <a href="#web-design" className="hover:underline">
+                  Web Design
+                </a>
+              </li>
+              <li>
+                <a href="#web-development" className="hover:underline">
+                  Web Development
+                </a>
+              </li>
+              <li>
+                <a href="#seo" className="hover:underline">
+                  SEO Services
+                </a>
+              </li>
+              <li>
+                <a href="#digital-marketing" className="hover:underline">
+                  Digital Marketing
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="text-white font-bold text-lg mb-4">Quick Links</h5>
+            <ul className="space-y-2">
+              <li>
+                <a href="#portfolio" className="hover:underline">
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a href="#about-us" className="hover:underline">
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href="#testimonials" className="hover:underline">
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:underline">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h5 className="text-white font-bold text-lg mb-4">
+              Stay Connected
+            </h5>
+            <form action="#" method="POST" className="flex flex-col space-y-3">
+              <input
+                type="email"
+                placeholder="Your email address"
+                className="px-4 py-2 bg-gray-800 text-white rounded focus:outline-none focus:ring-2 focus:ring-primary focus:bg-gray-700"
+              />
+              <button
+                type="submit"
+                className="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition-colors duration-300"
+              >
+                Subscribe
+              </button>
+            </form>
+            <div className="flex space-x-4 mt-4">
+              <a
+                href="#"
+                className="hover:text-white transition-colors duration-300"
+              >
+                <faLinkedin />
+              </a>
+              <a
+                href="#"
+                className="hover:text-white transition-colors duration-300"
+              >
+                <faXTwitter />
+              </a>
+              <a
+                href="#"
+                className="hover:text-white transition-colors duration-300"
+              >
+                <faInstagram />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="pt-8 mt-8 border-t border-gray-800 text-center">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+            <p>© 2024 Nucleus Web Studios. All rights reserved.</p>
+            <div className="flex gap-4">
+              <a href="#privacy-policy" className="hover:underline">
+                Privacy Policy
+              </a>
+              <a href="#terms-of-service" className="hover:underline">
+                Terms of Service
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
 
@@ -178,6 +316,7 @@ const HomePage = () => {
       <div className="min-h-screen flex flex-col">
         <HomeHero />
         <WelcomeSection />
+        <Footer />
       </div>
     </motion.div>
   );
