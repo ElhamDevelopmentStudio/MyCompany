@@ -80,7 +80,7 @@ const HomeHero = () => {
         {/* Social Icons - Vertically arranged, centered to the left */}
         <div className="flex sm:hidden justify-center bottom-0 left-0 right-0 mx-auto pb-4 absolute space-x-2">
           <FontAwesomeIcon
-            icon={faTwitter}
+            icon={faXTwitter}
             size="lg"
             className="text-white hover:text-gray-300 transition-colors duration-200"
           />
