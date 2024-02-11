@@ -3,7 +3,9 @@ import HomePage from './Components/Home/HomeHero';
 import ServicesPage from './Components/ServicesPage/Services';
 import { AnimatePresence } from "framer-motion";
 import GradientButton from "./Components/Home/GradientButton";
-import LandingPage from "./Components/Home/Home";
+import DynamicGradientButton from "./Components/Helpers/DynamicGradientButton";
+import { MdStar } from "react-icons/md";
+import AboutUs from "./Components/About/AboutUs";
 
 const App = () => {
   return (
@@ -15,6 +17,7 @@ const App = () => {
             <Route path="/services" element={<ServicesPage />} />
 
             <Route path="/button" element={<GradientButton />} />
+            <Route path="/about" element={<AboutUs />} />
           </Routes>
         </AnimatePresence>
       </div>

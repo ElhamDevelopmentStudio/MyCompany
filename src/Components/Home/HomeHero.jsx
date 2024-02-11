@@ -149,7 +149,7 @@ const WelcomeSection = () => {
         </div>
 
         <div className="flex flex-col max-w-xl">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          <h1 className="hero-text-gradient text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Welcome to Nucleus Web Studio
           </h1>
           <p className="text-md sm:text-lg md:text-xl lg:text-2xl mb-8">
