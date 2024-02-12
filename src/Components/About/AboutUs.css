@@ -136,7 +136,7 @@
 }
 
 .spotlight-gradient {
-  animation: colorCycle 8s infinite ease;
+  animation: colorCycle 8s infinite ease-in-out;
 }
 
 

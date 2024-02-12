@@ -20,13 +20,42 @@ const titleVariants = {
   },
 };
 
+const gradientVariants = {
+  initial: {
+    // Starting gradient with visible colors against black
+    background:
+      "linear-gradient(135deg, rgba(253,29,29,0.7) 0%, rgba(252,176,69,0) 50%, rgba(0,0,0,0) 100%)",
+  },
+  animate: {
+    // Rotating through gradients, ensuring at least part of the gradient is visible against black
+    background: [
+      "linear-gradient(135deg, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0) 50%, rgba(0,0,0,0) 100%)",
+      "linear-gradient(135deg, rgba(253,29,29,0.7) 0%, rgba(252,176,69,0) 50%, rgba(0,0,0,0) 100%)",
+      "linear-gradient(135deg, rgba(252,176,69,0.7) 0%, rgba(131,58,180,0) 50%, rgba(0,0,0,0) 100%)",
+      "linear-gradient(135deg, rgba(131,58,180,0.7) 0%, rgba(253,29,29,0) 50%, rgba(0,0,0,0) 100%)",
+    ],
+    transition: {
+      duration: 10,
+      ease: "linear",
+      loop: Infinity,
+    },
+  },
+};
+
 const AboutUs = () => {
   return (
     <div
-      className="min-h-screen flex flex-col spotlight-gradient text-white"
-      // ... any other styles or attributes
+      className="relative min-h-screen flex flex-col text-white"
+      style={{ backgroundColor: "black" }}
     >
       <TranslucentNavbar />
+      <motion.div
+        className="absolute h-full w-full" // Adjust size as needed
+        variants={gradientVariants}
+        initial="initial"
+        animate="animate"
+        style={{ backgroundBlendMode: "multiply" }} // Ensure gradient blends well with the black background
+      />
       <motion.div
         className="flex-grow flex flex-col justify-center items-center px-4 sm:px-8 lg:px-20"
         initial="initial"
@@ -64,6 +93,7 @@ const AboutUs = () => {
           whileTap="tap"
         >
           <span className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500"></span>
+
           <span className="relative">Get in touch</span>
         </motion.button>
       </motion.div>
